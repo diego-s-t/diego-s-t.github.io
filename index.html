@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>StreamFlix</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial;
+      background: #141414;
+      color: white;
+    }
+
+    header {
+      padding: 15px;
+      font-size: 24px;
+      font-weight: bold;
+      color: red;
+    }
+
+    .banner {
+      background: url("https://via.placeholder.com/800x300") no-repeat center;
+      background-size: cover;
+      height: 200px;
+      display: flex;
+      align-items: flex-end;
+      padding: 20px;
+    }
+
+    .row {
+      margin: 20px;
+    }
+
+    .row h2 {
+      margin-bottom: 10px;
+    }
+
+    .movies {
+      display: flex;
+      overflow-x: auto;
+      gap: 10px;
+    }
+
+    .movies img {
+      width: 120px;
+      border-radius: 5px;
+      transition: transform 0.3s;
+    }
+
+    .movies img:hover {
+      transform: scale(1.1);
+    }
+
+    .movies::-webkit-scrollbar {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>STREAMFLIX</header>
+
+<div class="banner">
+  <h1>Filme em destaque</h1>
+</div>
+
+<div class="row">
+  <h2>🔥 Populares</h2>
+  <div class="movies">
+    <img src="https://via.placeholder.com/120x180">
+    <img src="https://via.placeholder.com/120x180">
+    <img src="https://via.placeholder.com/120x180">
+  </div>
+</div>
+
+<div class="row">
+  <h2>🎥 Ação</h2>
+  <div class="movies">
+    <img src="https://via.placeholder.com/120x180">
+    <img src="https://via.placeholder.com/120x180">
+    <img src="https://via.placeholder.com/120x180">
+  </div>
+</div>
+
+</body>
+</html>
